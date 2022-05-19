@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+*{
+   font-family: 'Gotham', sans-serif;
+}
+
+body{
+    background: #000 !important;
+}
+
+.menu-navegacion{
+   z-index: 2;
+   transform: translateX(-50%);
+   margin-top: 70px;
+
+   .logo-marca{
+      img{
+         max-width: 300px;
+      }
+   }
+
+   .boton-vtr{
+      height: 100%;
+      a{
+         display: block;
+         text-decoration: none;
+         color: #fff;
+         opacity: 0.8;
+         font-weight: bold;
+         padding: 10px 20px;
+         border-radius: 20px;
+         background: rgba(255, 44, 131, 0.7);
+         transition: background 0.3s ease;
+         &:hover{
+            background:#7B61FF;
+         }
+      }      
+   }
+}

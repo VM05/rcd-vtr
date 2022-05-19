@@ -1,0 +1,89 @@
+.contenedor-listas-footer{
+    width: 40%;
+    .lista{
+        ul{
+            
+            li{
+                list-style: none;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color:#fff;
+                    opacity: 0.8;
+                    padding: 5px 0px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                   img{
+                    
+                    min-width: 16px;
+                    max-width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                    display: block;
+                   }
+
+                }
+                
+            }
+            
+        }
+
+    }
+
+}
+
+.logo-redes-footer{
+    
+    .logo-footer{
+        img{
+            max-width: 150px;
+        }
+    }
+
+
+    .redes{
+        ul{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color:#fff;
+                opacity: 0.8;
+                padding: 5px 0px;
+                display: block;
+                font-size: 25px;
+                transition: transform 0.3s ease;
+                i{
+                    font-style: normal;
+
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                    opacity: 1;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+.copy-right{
+    border-top: solid 1px #FF2C83;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+
+    p{
+        margin-bottom: 0;
+
+    }
+}
