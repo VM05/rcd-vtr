@@ -188,7 +188,7 @@ body {
   padding: 20px;
   transition: all 0.3s ease;
 }
-#carrusel-destacados .owl-item .item-carrusel-destacado .informacion-canal-hora {
+#carrusel-destacados .owl-item .item-carrusel-destacado a .informacion-canal-hora {
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -202,10 +202,10 @@ body {
   opacity: 1;
   flex-direction: column;
 }
-#carrusel-destacados .owl-item .item-carrusel-destacado .informacion-canal-hora .texto-canal-hora {
+#carrusel-destacados .owl-item .item-carrusel-destacado a .informacion-canal-hora .texto-canal-hora {
   display: flex;
 }
-#carrusel-destacados .owl-item .item-carrusel-destacado .informacion-canal-hora .texto-canal-hora p {
+#carrusel-destacados .owl-item .item-carrusel-destacado a .informacion-canal-hora .texto-canal-hora p {
   color: #fff;
   padding: 10px;
   display: flex;
@@ -215,7 +215,7 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-#carrusel-destacados .owl-item .item-carrusel-destacado .informacion-canal-hora .texto-canal-hora p img {
+#carrusel-destacados .owl-item .item-carrusel-destacado a .informacion-canal-hora .texto-canal-hora p img {
   margin-right: 5px;
   max-width: 25px;
 }
