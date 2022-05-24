@@ -30,7 +30,13 @@
                 <div id="carrusel-principal" class="owl-carousel owl-theme">
                     <div class="item-banner-principal position-relative" data-hash="zero">
                         <div class="imagen-banner position-relative">
-                            <img src="/assets/img/abc.jpg" alt="foto-prueba" class="img-fluid">
+
+                            <picture>
+                                <source srcset="/assets/img/Cover.jpg" media="(min-width: 769px) " class="img-fluid">
+                                <source srcset="/assets/img/abc.jpg" media="(max-width: 768px)" class="img-fluid">
+                                <img src="/assets/img/abc.jpg" alt ="banner principal" class="img-fluid">
+                            </picture> 
+                           
                         </div>
                         <div class="descripcion-logotipo text-white position-absolute">
                             <div class="logo-serie">
@@ -47,6 +53,7 @@
                                 <div class="informacion-trailer">
                                     
                                     <p>trailer</p>
+                                
                                 </div>
                             </div>
                         </div> 
@@ -54,7 +61,11 @@
 
                     <div class="item-banner-principal position-relative" data-hash="one">
                         <div class="imagen-banner position-relative">
-                            <img src="/assets/img/Cover.png" alt="foto-prueba" class="img-fluid">
+                            <picture>
+                                <source srcset="/assets/img/Cover.jpg" media="(min-width: 769px) " class="img-fluid">
+                                <source srcset="/assets/img/abc.jpg" media="(max-width: 768px)" class="img-fluid">
+                                <img src="/assets/img/abc.jpg" alt ="banner principal" class="img-fluid">
+                            </picture> 
                         </div>
                         <div class="descripcion-logotipo text-white position-absolute">
                             <div class="logo-serie">
@@ -67,7 +78,8 @@
 
                             <div class="boton-youtube-modal">
                                 <div class="contenedor-boton-play">
-                                    <a href="" class="boton-play" data-bs-toggle="modal" data-bs-target="#exampleModal" data-src="IP7uGKgJL8U"></a>
+                                    <a href="" class="boton-play" data-bs-toggle="modal" data-bs-target="#exampleModal" data-src="IP7uGKgJL8U"
+                                    data-information="Entretenimiento / TV / 2 hrs" data-title ="hola dani" data-transmition="Transmisión: 22 de Mayo, 22:05."></a>
                                 </div>
                                 <div class="informacion-trailer">
                                    
@@ -79,7 +91,11 @@
 
                     <div class="item-banner-principal position-relative" data-hash="two">
                         <div class="imagen-banner position-relative">
-                            <img src="/assets/img/Cover.png" alt="foto-prueba" class="img-fluid">
+                            <picture>
+                                <source srcset="/assets/img/Cover.jpg" media="(min-width: 769px) " class="img-fluid">
+                                <source srcset="/assets/img/abc.jpg" media="(max-width: 768px)" class="img-fluid">
+                                <img src="/assets/img/abc.jpg" alt ="banner principal" class="img-fluid">
+                            </picture> 
                         </div>
                         <div class="descripcion-logotipo text-white position-absolute">
                             <div class="logo-serie">
@@ -101,7 +117,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="container gx-0 position-absolute bottom-0 carrusel-peliculas">
+                <div class="container gx-0 bottom-0 carrusel-peliculas">
                     <div class="row gx-0 position-relative  row-carrusel">
                         <div id="carrusel-peliculas" class="owl-carousel owl-theme">
                             <div class="item-pelicula">
@@ -143,16 +159,16 @@
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                     
-                        <div class="modal-body player">
+                        <div class="modal-body ">
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></span>
                             </button>  
                             <div class="ratio ratio-16x9 player">
-                            <iframe id="iframeYoutube" class="embed-responsive-item border-rounded" src="" frameborder="0" allowfullscreen></iframe> 
+                            <iframe id="iframeYoutube" class="embed-responsive-item border-rounded" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen rel='0'></iframe> 
                             <div class="iframe-overlay">
                                 <div class="texto-overlay p-3 text-white">
-                                    <p class="mb-0">Documental / TV Drama / 2 hrs / 2020 HD</p>
-                                    <h4>Friends the Reunion</h4>
-                                    <p class="mb-0">Transmisión: 22 de Mayo, 22:05.</p>
+                                    <p class="mb-0 data-informacion"></p>
+                                    <h4 class="data-title"></h4>
+                                    <p class="mb-0 data-transmision"></p>
                                 </div>
                             </div>
 
@@ -168,7 +184,7 @@
         
     <section class="container gx-0 mx-auto mt-5">
         <article class="row gx-0">
-            <div class="titulo-destacados d-flex w-100  align-items-center text-white ms-3 p-3">
+            <div class="titulo-destacados d-flex w-100 align-items-md-center text-white ms-md-3 p-3 flex-column flex-md-row align-items-start">
                 <h2>Qué ver hoy</h2>
                 <div class="emoji-fecha d-flex  justify-content-center align-items-center ms-4">
                     <img src="/assets/img/Emoji.svg" alt="emoji" class="d-block me-2">
@@ -181,9 +197,16 @@
                         <div class="item-destacado-imagen">
                             <img src="/assets/img/film1.png" alt="">
                         </div>
-                        <div class="item-destacado-texto">
-                            <h3>Luca 2021</h3>
-                            <p>De los creadores de Coco y Toy Story, llega Luca, la nueva aventura animada de Pixar.</p>
+                        <div class="item-destacado-texto d-flex justify-content-between justify-content-xl-end">
+                            <div class="badges d-inline-flex d-xl-none">
+                                <span class="badge rounded-pill bg-primary badge-pelicula" style="background:#FFCC4D !important">Hoy, 22:00 hrs.</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula" style="background:#FF2C83 !important"><img src="/assets/img/tv.png" alt="tv" class="imagen-pill">HBO 231</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula" style="background:#5575E8 !important">Infantil</span>
+                            </div>
+                            <div>
+                                <h3>Luca 2021</h3>
+                                <p>De los creadores de Coco y Toy Story, llega Luca, la nueva aventura animada de Pixar.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -205,9 +228,17 @@
                             <img src="/assets/img/film2.png" alt="">
                         </div>
 
-                        <div class="item-destacado-texto">
-                            <h3>Spiderman</h3>
-                            <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura.</p>
+                        <div class="item-destacado-texto d-flex justify-content-between justify-content-xl-end">
+                            <div class="badges d-inline-flex d-xl-none">
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Hoy, 22:00 hrs.</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula"><img src="/assets/img/tv.png" alt="tv" class="imagen-pill">HBO 231</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Primary</span>
+                                
+                            </div>
+                            <div>
+                                <h3>Spiderman</h3>
+                                <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -218,7 +249,39 @@
 
                         <div class="texto-canal-hora">
                             <p><img src="/assets/img/tv.png" alt="tv">208</p>
-                            <p><img src="/assets/img/reloj.png" alt="reloj"> 19:00</p>
+                            <p><img src="/assets/img/reloj.png" alt="reloj">19:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-carrusel-destacado">
+                    <div class="imagen-texto">
+                        <div class="item-destacado-imagen">
+                            <img src="/assets/img/film2.png" alt="">
+                        </div>
+
+                        <div class="item-destacado-texto d-flex justify-content-between justify-content-xl-end">
+                            <div class="badges d-inline-flex d-xl-none">
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Hoy, 22:00 hrs.</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula"><img src="/assets/img/tv.png" alt="tv" class="imagen-pill">HBO 231</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Primary</span>
+                                
+                            </div>
+                            <div>
+                                <h3>Spiderman</h3>
+                                <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="informacion-canal-hora">
+                        <div class="img-canal-hora">
+                            <img src="/assets/img/tnt.png" alt="">
+                        </div>
+
+                        <div class="texto-canal-hora">
+                            <p><img src="/assets/img/tv.png" alt="tv">208</p>
+                            <p><img src="/assets/img/reloj.png" alt="reloj">19:00</p>
                         </div>
                     </div>
                 </div>
@@ -229,9 +292,17 @@
                             <img src="/assets/img/film3.png" alt="">
                         </div>
 
-                        <div class="item-destacado-texto">
-                            <h3>La Casa de Papel</h3>
-                            <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura.</p>
+                        <div class="item-destacado-texto d-flex justify-content-between justify-content-xl-end">
+                            <div class="badges  d-inline-flex d-xl-none">
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Hoy, 22:00 hrs.</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula"><img src="/assets/img/tv.png" alt="tv" class="imagen-pill">HBO 231</span>
+                                <span class="badge rounded-pill bg-primary badge-pelicula">Primary</span>
+                                
+                            </div>
+                            <div>
+                                <h3>La Casa de Papel</h3>
+                                <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura.</p>
+                            </div>
                         </div>
 
                         <div class="informacion-canal-hora">
@@ -252,7 +323,13 @@
     <section class="row gx-0">
         <article>
             <div class="banner-publicitario">
-                <img src="/assets/img/BannerPublicidad-c.webp" alt="banner-publicitario" class="img-fluid">
+
+                <picture>
+                    <source srcset="/assets/img/BannerPublicidad-c.webp" media="(min-width: 500px)">
+                    <source srcset="/assets/img/batman-mobile.png" media="(max-width: 499px)">
+                    <img src="/assets/img/BannerPublicidad-c.webp" alt="banner-publicitario" class="img-fluid w-100">
+                </picture> 
+                
             </div>
         </article>
     </section>
@@ -261,9 +338,9 @@
     <div class="container">
         <div class="row p-5">
             
-            <div class="d-flex justify-content-between flex-direction-row align-items-center p-0">
+            <div class="d-flex justify-content-center flex-row-reverse align-items-center p-0">
 
-                <div class="contenedor-listas-footer">
+                <!-- <div class="contenedor-listas-footer">
                     <h5 class="text-white">Nuesta Empresa</h5>
                     <div class="listas-footer d-flex justify-content-between">
                         <div class="lista iconos">
@@ -283,7 +360,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="logo-redes-footer">
                     <div class="logo-footer">

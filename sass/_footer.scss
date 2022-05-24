@@ -1,3 +1,5 @@
+@use 'colores';
+
 .contenedor-listas-footer{
     width: 40%;
     .lista{
@@ -8,7 +10,7 @@
                 position: relative;
                 a{
                     text-decoration: none;
-                    color:#fff;
+                    color:colores.$blanco;
                     opacity: 0.8;
                     padding: 5px 0px;
                     display: flex;
@@ -48,7 +50,7 @@
             list-style: none;
             a{
                 text-decoration: none;
-                color:#fff;
+                color:colores.$blanco;
                 opacity: 0.8;
                 padding: 5px 0px;
                 display: block;
@@ -72,7 +74,7 @@
 }
 
 .copy-right{
-    border-top: solid 1px #FF2C83;
+    border-top: solid 1px colores.$colorfulpink;
     color: white;
     text-align: center;
     padding: 20px;

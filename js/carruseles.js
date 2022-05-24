@@ -4,6 +4,7 @@ $(document).ready(function(){
         autoplay:false,
         autoplayTimeout:1000,
         nav:false,
+        dots: false,
         stagePadding: 0,
         animateOut: 'fadeOut',
         URLhashListener:true,
@@ -25,11 +26,15 @@ $(document).ready(function(){
         URLhashListener:true,
         responsive:{
             0:{
-                items:2
+                items:3
             },
             768:{
-                items:7,
+                items:5,
             },
+
+            1240:{
+                items:7
+            }
         }
     })
 
@@ -45,8 +50,11 @@ $(document).ready(function(){
                 items:1
             },
             768:{
-                items:3,
+                items:2,
             },
+            1240:{
+                items:3,
+            }
         }
     })
 })
