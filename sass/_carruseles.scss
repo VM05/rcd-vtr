@@ -42,11 +42,11 @@
           z-index: 2;
           left: 15%;
           transform: translateY(-50%);
+          max-width: 500px;
+         
+          @media (max-width:1366px){
+            left: 17%;
 
-          @media (max-width:1440px) {
-            top: 42%;
-            left: 9%;
-             
           }
 
           @media (max-width:768px) {
@@ -56,14 +56,15 @@
 
 
           @media (max-width:500px) {
-             top:65%;
-             max-width: 70%;
+             top:62%;
+             max-width: 75%;
           }
          
 
           .logo-serie{
                img{
-                  max-width: 300px;
+                  max-height:80px;
+                  width: auto;
                }
 
                @media (max-width:500px) {
@@ -170,10 +171,10 @@
        .center{
           transform: scale(1.1);
           .item-pelicula{
-             border: solid 1px ;
+             border: solid 1px colores.$colorfulpink;
              img{
                 filter: grayscale(0%);
-                border: solid 1px ;
+                border: solid 1px colores.$colorfulpink;
              }
           }
        }
@@ -415,6 +416,11 @@
    }
  }
 
+ .modal{
+   background: rgba(0,0,0,0.7);
+
+ }
+
  .modal-content{
    background-color: transparent !important;
    border:none !important;
@@ -450,4 +456,9 @@
       z-index: 1;
    }
  }
+}
+
+.modal-backdrop
+{
+    opacity:0 !important;
 }

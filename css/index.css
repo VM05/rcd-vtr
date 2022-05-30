@@ -7,6 +7,24 @@ body {
   background: #000 !important;
 }
 
+@media screen and (min-resolution: 120dpi) {
+  body {
+    zoom: 0.8;
+  }
+
+  .modal {
+    zoom: 1;
+  }
+}
+@media screen and (max-width: 1366px) {
+  body {
+    zoom: 0.8;
+  }
+
+  .modal {
+    zoom: 1;
+  }
+}
 .menu-navegacion {
   z-index: 2;
   transform: translateX(-50%);
@@ -18,7 +36,7 @@ body {
   }
 }
 .menu-navegacion .logo-marca img {
-  max-width: 250px;
+  max-width: 200px;
 }
 @media (max-width: 1024px) {
   .menu-navegacion .logo-marca img {
@@ -37,11 +55,10 @@ body {
   display: block;
   text-decoration: none;
   color: #fff;
-  opacity: 0.8;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 20px;
-  background: rgba(255, 44, 131, 0.57);
+  background: rgb(255, 44, 131);
   transition: background 0.3s ease;
 }
 .menu-navegacion .boton-vtr a:hover {
@@ -81,11 +98,11 @@ body {
   z-index: 2;
   left: 15%;
   transform: translateY(-50%);
+  max-width: 500px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .contenedor-carruseles .item-banner-principal .descripcion-logotipo {
-    top: 42%;
-    left: 9%;
+    left: 17%;
   }
 }
 @media (max-width: 768px) {
@@ -96,12 +113,13 @@ body {
 }
 @media (max-width: 500px) {
   .contenedor-carruseles .item-banner-principal .descripcion-logotipo {
-    top: 65%;
-    max-width: 70%;
+    top: 62%;
+    max-width: 75%;
   }
 }
 .contenedor-carruseles .item-banner-principal .descripcion-logotipo .logo-serie img {
-  max-width: 300px;
+  max-height: 80px;
+  width: auto;
 }
 @media (max-width: 500px) {
   .contenedor-carruseles .item-banner-principal .descripcion-logotipo .logo-serie img {
@@ -187,11 +205,11 @@ body {
   transform: scale(1.1);
 }
 .contenedor-carruseles .carrusel-peliculas .center .item-pelicula {
-  border: solid 1px;
+  border: solid 1px rgb(255, 44, 131);
 }
 .contenedor-carruseles .carrusel-peliculas .center .item-pelicula img {
   filter: grayscale(0%);
-  border: solid 1px;
+  border: solid 1px rgb(255, 44, 131);
 }
 .contenedor-carruseles .carrusel-peliculas .item-pelicula {
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.6);
@@ -403,6 +421,10 @@ body {
   display: flex;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .modal-content {
   background-color: transparent !important;
   border: none !important;
@@ -435,6 +457,10 @@ body {
   border-radius: 10px;
   overflow: hidden;
   z-index: 1;
+}
+
+.modal-backdrop {
+  opacity: 0 !important;
 }
 
 .contenedor-listas-footer {

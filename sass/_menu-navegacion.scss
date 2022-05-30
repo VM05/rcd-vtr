@@ -10,6 +10,16 @@ body{
     background: #000 !important;
 }
 
+@media screen and (min-resolution: 120dpi) { 
+   body {zoom: 0.8;}
+   .modal{zoom: 1;}
+   }
+ 
+   @media screen and (max-width: 1366px) { 
+     body {zoom: 0.8;}
+     .modal{zoom: 1;}
+   }
+
 .menu-navegacion{
    z-index: 2;
    transform: translateX(-50%);
@@ -21,7 +31,7 @@ body{
 
    .logo-marca{
       img{
-         max-width: 250px;
+         max-width: 200px;
 
          @media (max-width:1024px) { 
                max-width: 150px;
@@ -40,11 +50,10 @@ body{
          display: block;
          text-decoration: none;
          color: colores.$blanco;
-         opacity: 0.8;
          font-weight: bold;
          padding: 10px 20px;
          border-radius: 20px;
-         background: colores.$opaquepink;
+         background: colores.$colorfulpink;
          transition: background 0.3s ease;
          &:hover{
             background: colores.$morado;
