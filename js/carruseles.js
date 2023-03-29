@@ -1,8 +1,10 @@
 $(document).ready(function(){
     $("#carrusel-principal").owlCarousel({
         loop:true,
-        autoplay:false,
-        autoplayTimeout:1000,
+        autoplay:true,
+        slideSpeed : 5000,
+        autoplayHoverPause:true,
+        autoplayTimeout:5000,
         nav:false,
         dots: false,
         stagePadding: 0,
@@ -18,7 +20,7 @@ $(document).ready(function(){
     $("#carrusel-peliculas").owlCarousel({
         loop:true,
         autoplay:false,
-        autoplayTimeout:1000,
+        autoplayTimeout:5000,
         center:true,
         nav:true,
         dots:false,
@@ -44,6 +46,8 @@ $(document).ready(function(){
         autoplayTimeout:1000,
         nav:false,
         dots:true,
+        center:true,
+        margin:30,
         navText: ["<img src='/assets/img/prev.svg'>","<img src='/assets/img/next.svg'>"],
         responsive:{
             0:{
