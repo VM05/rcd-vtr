@@ -15,14 +15,47 @@
 </head>
 <body>
 <nav  class="container gx-0 position-absolute start-50 menu-navegacion">
-    <div class="container d-flex gx-0 justify-content-between">
+    <div class=" d-flex gx-0 justify-content-between align-items-center py-2 px-4 ">
+        <div class="logo-marca w-25">
+            <a href="https://www.clacktv.cl">
+                <img src="/assets/img/Clack_LogoSuperior.svg" width="150px" height="50px" alt="imagen logo">
+            </a>
+        </div>
+        <div class="d-flex justify-content-between align-items-center menu-header">
+            <div class="lista-menu">
+                <ul class="m-0 text-white list-unstyled">
+                                                    <li class="mx-3"><a href="">Tendencias</a></li>
+                                                                                <li class="mx-3"><a href="">Cine &amp; Series</a></li>
+                                                                                <li class="mx-3"><a href="">Imperdibles VTR+</a></li>
+                                                                                <li class="mx-3"><a href="">Zona Familiar</a></li>
+                                            </ul>
+            </div>
+           <div class="formulario-busqueda position-relative">
+                <form action="" class="buscador-header">
+                    <input type="text" name="s" id="s" placeholder="Buscar...">
+                    <button type="submit" class="boton-buscar-header"><img src="/assets/img/lupa.svg" alt="lupa"></button>
+                </form>
+            </div>
+            <div class="contenedor-lupa-hamburguersa">
+                <div class="lupa-mobile">
+                    <a href=""><img src="/assets/img/lupa.svg" alt=""></a>
+                </div>
+                <div class="hamburguesa">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container d-flex gx-0 justify-content-between">
         <div class="logo-marca">
             <img src="/assets/img/Clack_LogoSuperior.png" alt="">
         </div>
         <div class="boton-vtr d-none d-md-block">
             <a href="https://vtr.com/" >IR A VTR.COM</a>
         </div>
-    </div>
+    </div> -->
 </nav>
 <main class="container-fluid gx-0">
         <section class="row gx-0 position-relative contenedor-carruseles">
@@ -334,66 +367,78 @@
         </article>
     </section>
 </main>
-<footer>
-    <div class="container">
-        <div class="row p-5">
-            
-            <div class="d-flex justify-content-center flex-row-reverse align-items-center p-0">
-
-                <!-- <div class="contenedor-listas-footer">
-                    <h5 class="text-white">Nuesta Empresa</h5>
-                    <div class="listas-footer d-flex justify-content-between">
-                        <div class="lista iconos">
-                            <ul class="p-0">
-                                <li><a href=""><img src="/assets/img/vtr-rojo.png" alt="">Quiénes somos</a></li>
-                                <li><a href=""><img src="/assets/img/vtr-colores.png" alt="">VTR Convive Digital</a></li>
-                                <li><a href=""><img src="/assets/img/colores.png" alt="">Fundación VTR</a></li>
-                            </ul>
-                        </div>
-
-                        
-                        <div class="lista">
-                            <ul class="p-0">
-                                <li><a href=""><img src="/assets/img/location.png" alt="location">Sucursales</a></li>
-                                <li><a href="tel:6008009000"><img src="/assets/img/phone.png" alt="">600 800 9000</a></li>
-                                <li><a href="tel:223100200"><img src="/assets/img/cellphone.png" alt="cellphone" class="cellphone">22 310 0200</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="logo-redes-footer">
-                    <div class="logo-footer">
-                        <img src="/assets/img/Clack_LogoSuperior.png" alt="Clack">
-                    </div>
-                    <div class="redes">
-                        <ul class="d-flex justify-content-between p-0 mt-3">
-                            <li><a href="">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a></li>
-                            <li><a href="">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a></li>
-                            <li> <a href="">
-                                <i class="fa-brands fa-tiktok"></i>
-                            </a></li>
-                            <li> <a href="">
-                                <i class="fa-brands fa-facebook-square"></i>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
+<footer class="position-relative">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-flex justify-content-center align-items-center py-4 p-md-5">
+          <div
+            class="logo-menu-footer w-md-75 d-flex justify-content-center align-items-center flex-column"
+          >
+            <div class="logo-footer">
+              <img src="/assets//img/Clack_LogoSuperior.png" alt="Clack" />
             </div>
+
+            <div
+              class="redes d-md-flex justify-content-center align-items-center flex-direction-row my-3 my-md-0"
+            >
+              <div class="mx-3 instagram-link">
+                <a href="https://www.instagram.com/clack.tv/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <div class="boton-vtr">
+                <a href="https://vtr.com/" target="_blank">IR A VTR.COM</a>
+              </div>
+            </div>
+
+            <div class="descripcion-footer my-3 px-4 p-md-0">
+              <p>Clack! es el espacio ideal para los fanáticos del cine y las series</p>
+            </div>
+
+            <div class="menu-footer w-100 mt-0 mt-md-3 mb-0">
+              <ul
+                class="list-unstyled m-0 d-flex flex-column flex-md-row justify-content-between text-center"
+              >
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/somos-clack.html">Somos clack</a></li>
+                <li><a href="/tendencias.html">Tendencias</a></li>
+                <li><a href="/cine-series.html">Cine & Series</a></li>
+                <li>
+                  <a href="/imperdibles-vod-vtr.html">Imperdibles VOD</a>
+                </li>
+                <li><a href="/zona-familiar.html">Zona Familiar</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="container-fluid copy-right gx-0">
-        <p>©2022 CLACK Comunicaciones SpA</p>
+      <p>©2022 CLACK Comunicaciones SpA</p>
     </div>
-</footer>
+  </footer>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/js/carruseles.js"></script>
+  <script src="/js/carrusel-videos.js"></script>
+  <script src="/js/paginador.js"></script>
+  <script src="/js/iteracionesvod.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/OwlCarousel/dist/owl.carousel.min.js"></script>
-<script src="/js/carruseles.js"></script>
-<script src="/js/carrusel-videos.js"></script>
 </html>
