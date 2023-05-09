@@ -859,6 +859,7 @@ body {
   display: flex;
   opacity: 1;
   animation: mostrar 0.3s forwards;
+  border-radius: 30px;
 }
 @keyframes mostrar {
   from {
@@ -1025,14 +1026,12 @@ body {
   border-top: solid 2px rgb(255, 44, 131);
   flex-grow: 1;
 }
+
 .carrusel-datos-actores .texto-datos-actores h5 {
   color: rgb(255, 44, 131);
   flex-grow: 1;
-  height: 110px;
 }
-.carrusel-datos-actores .texto-datos-actores p.text-white {
-  height: 120px;
-}
+
 .carrusel-datos-actores .texto-datos-actores a.leer-datos {
   text-decoration: none;
   color: #fff;
@@ -1637,44 +1636,42 @@ h1.bajada-imperdibles {
   text-decoration: none !important;
   color: #fff;
 }
+
 .cuenta-regresiva-container
-  .boton-youtube-modal
-  .contenedor-boton-play
-  a:nth-child(2n)
-  .cuenta-regresiva-item {
-  flex-direction: row-reverse;
-}
-.cuenta-regresiva-container
-  .boton-youtube-modal:nth-child(3)
+  .boton-youtube-modal:nth-child(even)
   .contenedor-boton-play
   a
   .cuenta-regresiva-item {
   flex-direction: row-reverse;
 }
+
 .cuenta-regresiva-container
-  .boton-youtube-modal:nth-child(3)
+  .boton-youtube-modal:nth-child(even)
   .contenedor-boton-play
   a
   .cuenta-regresiva-item
   .contenedor-texto-cuenta-regresiva {
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px 0px 0px 20px;
+}
+.cuenta-regresiva-container
+  .boton-youtube-modal:nth-child(odd)
+  .contenedor-boton-play
+  a
+  .cuenta-regresiva-item
+  .contenedor-texto-cuenta-regresiva {
+  border-radius: 0px 20px 20px 0px;
 }
 @media (max-width: 550px) {
+  .cuenta-regresiva-container .boton-youtube-modal .contenedor-boton-play a .cuenta-regresiva-item {
+    flex-direction: column;
+  }
+
   .cuenta-regresiva-container
-    .boton-youtube-modal:nth-child(3)
+    .boton-youtube-modal:nth-child(even)
     .contenedor-boton-play
     a
     .cuenta-regresiva-item {
     flex-direction: column;
-  }
-  .cuenta-regresiva-container
-    .boton-youtube-modal:nth-child(3)
-    .contenedor-boton-play
-    a
-    .cuenta-regresiva-item
-    .contenedor-texto-cuenta-regresiva {
-    text-align: center;
-    border-radius: 0px 0px 20px 20px;
   }
 }
 
@@ -1717,7 +1714,6 @@ h1.bajada-imperdibles {
   padding: 30px;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 0px 20px 20px 0px;
   width: 100%;
 }
 .cuenta-regresiva-item .contenedor-texto-cuenta-regresiva a {
@@ -1806,7 +1802,7 @@ h1.bajada-imperdibles {
 .carrusel-articulo-peliculas .owl-prev {
   position: absolute;
   top: 40%;
-  left: 0;
+  left: 20px;
   transition: transform 0.3s ease;
   /*  transform: translateY(-50%); */
 }
@@ -1826,7 +1822,7 @@ h1.bajada-imperdibles {
 .carrusel-articulo-peliculas .owl-next {
   position: absolute;
   top: 40%;
-  right: 0;
+  right: 20px;
   transition: transform 0.3s ease;
 }
 @media (max-width: 500px) {
@@ -2001,7 +1997,7 @@ h3.h3-home {
 }
 .contenedor-panoramas .item-panorama .imagen-panorama img {
   width: 100% !important;
-  height: 300px !important;
+  height: 350px !important;
   object-fit: cover !important;
   transition: all 0.3s ease !important;
   margin-bottom: 0 !important;
@@ -2810,6 +2806,24 @@ h2.titulo-carrusel-recomendacion {
   font-style: italic;
   font-weight: 400;
   font-size: 36px;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.instagram div {
+  height: 300px;
+  width: calc(1280px / 3 - 30px);
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.instagram div:hover {
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=index.css.map */

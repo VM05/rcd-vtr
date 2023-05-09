@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/OwlCarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+      integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
+
+    <title>Clack TV</title>
+  </head>
+  <body>
+    <nav class="container gx-0 position-absolute start-50 menu-navegacion">
+      <div class="d-flex gx-0 justify-content-between align-items-center py-2 px-4">
+        <div class="logo-marca w-25">
+          <a href="/home.html">
+            <img
+              src="/assets/img/Clack_LogoSuperior.svg"
+              width="150px"
+              height="50px"
+              alt="imagen logo"
+            />
+          </a>
+        </div>
+        <div class="d-flex justify-content-between align-items-center menu-header">
+          <div class="lista-menu">
+            <ul class="m-0 text-white list-unstyled">
+              <li class="mx-3"><a href="/tendencias.html">Tendencias</a></li>
+              <li class="mx-3"><a href="/cine-series.html">Cine &amp; Series</a></li>
+              <li class="mx-3 active"><a href="/imperdiblesvod.html">Imperdibles VTR+</a></li>
+              <li class="mx-3"><a href="/zona-familiar.html">Zona Familiar</a></li>
+            </ul>
+          </div>
+          <div class="formulario-busqueda position-relative">
+            <form action="" class="buscador-header">
+              <input type="text" name="s" id="s" placeholder="Buscar..." />
+              <button type="submit" class="boton-buscar-header">
+                <img src="/assets/img/lupa.svg" alt="lupa" />
+              </button>
+            </form>
+          </div>
+          <div class="contenedor-lupa-hamburguersa">
+            <div class="lupa-mobile">
+              <a href=""><img src="/assets/img/lupa.svg" alt="" /></a>
+            </div>
+            <div class="hamburguesa">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container d-flex gx-0 justify-content-between">
+        <div class="logo-marca">
+            <img src="/assets/img/Clack_LogoSuperior.png" alt="">
+        </div>
+        <div class="boton-vtr d-none d-md-block">
+            <a href="https://vtr.com/" >IR A VTR.COM</a>
+        </div>
+    </div> -->
+    </nav>
+    <main>
+      <section class="container-fluid gx-0">
+        <article class="row gx-0">
+          <div class="col-md-12">
+            <div class="imagen-banner position-relative">
+              <picture>
+                <source
+                  srcset="/assets/imperdiblesvod/bannervod.webp"
+                  media="(min-width: 769px) "
+                  class="img-fluid"
+                />
+                <source
+                  srcset="/assets/imperdiblesvod/bannervodm.webp"
+                  media="(max-width: 768px)"
+                  class="img-fluid"
+                />
+                <img
+                  src="/assets/imperdiblesvod/bannervod.webp"
+                  alt="banner principal"
+                  class="img-fluid"
+                />
+              </picture>
+            </div>
+          </div>
+        </article>
+
+        <div class="botones-contenedores d-flex flex-row justify-content-center">
+          <div>
+            <a
+              href=""
+              class="boton-activo text-uppercase m-3 boton-1 botones-vod text-decoration-none"
+              >VTR+</a
+            >
+          </div>
+
+          <div>
+            <a href="" class="text-uppercase m-3 boton-2 botones-vod text-decoration-none"
+              >VTR+ kids</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="container gx-0 py-5 contenedor-1">
+        <h1 class="bajada-imperdibles text-center text-md-start">Titulo Seccion</h1>
+
+        <article class="row gx-0">
+          <div class="titulo-articulo-pelicula">
+            <h2 class="text-white my-5 m-3">Titulo</h2>
+          </div>
+          <div class="carrusel-articulo-peliculas owl-carousel owl-theme px-5">
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/barry.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/chernobil.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/edad-dorada.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/got.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/westworld.jpg" alt="" />
+              </div>
+            </div>
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/barry.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/chernobil.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/edad-dorada.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/got.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/westworld.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="row gx-0">
+          <div class="titulo-articulo-pelicula">
+            <h2 class="text-white my-5 m-3">Titulo</h2>
+          </div>
+          <div class="carrusel-articulo-peliculas owl-carousel owl-theme px-5">
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/barry.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/chernobil.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/edad-dorada.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/got.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/westworld.jpg" alt="" />
+              </div>
+            </div>
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/barry.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/chernobil.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/edad-dorada.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/got.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/westworld.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="container gx-0 py-5 contenedor-2">
+        <article class="row">
+          <div class="titulo-articulo-pelicula">
+            <h2 class="text-white my-5">Titulo</h2>
+          </div>
+          <div class="carrusel-articulo-peliculas owl-carousel owl-theme px-5">
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/backyardigans.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/bobelconstructor.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/drpanda.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/lafamiliazorron.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/escandalositos.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="item-carrusel-articulo-peliculas">
+              <div class="imagen-articulo-pelicula">
+                <img src="/assets/imperdiblesvod/dinotren.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="container-fluid gx-0 mt-5">
+        <article class="row gx-0">
+          <div class="banner-publicitario position-relative">
+            <picture>
+              <source
+                srcset="/assets/imperdiblesvod/bannerfootervod1.webp"
+                media="(min-width:
+              500px)"
+              />
+              <source
+                srcset="/assets/imperdiblesvod/bannerfootervod1_mobile.webp"
+                media="(max-width: 499px)"
+              />
+              <img
+                src="/assets/imperdiblesvod/bannerfootervod1.webp"
+                alt="banner-publicitario"
+                class="img-fluid w-100"
+              />
+            </picture>
+
+            <div class="texto-banner text-white position-absolute top-50 start-50 translate-middle">
+              <h2 class="text-center">¡Empieza a disfrutar del mejor contenido!</h2>
+              <a href="" class="cta-vod mx-auto d-block text-decoration-none text-center my-4"
+                >Contrata VOD</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="position-relative">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-flex justify-content-center align-items-center py-4 p-md-5">
+            <div
+              class="logo-menu-footer w-md-75 d-flex justify-content-center align-items-center flex-column"
+            >
+              <div class="logo-footer">
+                <img src="/assets//img/Clack_LogoSuperior.png" alt="Clack" />
+              </div>
+
+              <div
+                class="redes d-md-flex justify-content-center align-items-center flex-direction-row my-3 my-md-0"
+              >
+                <div class="mx-3 instagram-link">
+                  <a href="https://www.instagram.com/clack.tv/" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="boton-vtr">
+                  <a href="https://vtr.com/" target="_blank">IR A VTR.COM</a>
+                </div>
+              </div>
+
+              <div class="descripcion-footer my-3 px-4 p-md-0">
+                <p>Clack! es el espacio ideal para los fanáticos del cine y las series</p>
+              </div>
+
+              <div class="menu-footer w-100 mt-0 mt-md-3 mb-0">
+                <ul
+                  class="list-unstyled m-0 d-flex flex-column flex-md-row justify-content-between text-center"
+                >
+                  <li><a href="/home.html">Home</a></li>
+                  <li><a href="/somos-clack.html">Somos clack</a></li>
+                  <li><a href="/tendencias.html">Tendencias</a></li>
+                  <li><a href="/cine-series.html">Cine & Series</a></li>
+                  <li>
+                    <a href="/imperdibles-vod-vtr.html">Imperdibles VOD</a>
+                  </li>
+                  <li><a href="/zona-familiar.html">Zona Familiar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copy-right gx-0">
+        <p>©2022 CLACK Comunicaciones SpA</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/carruseles.js"></script>
+    <!-- <script src="/js/carrusel-videos.js"></script> -->
+    <script src="/js/paginador.js"></script>
+    <script src="/js/iteracionesvod.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

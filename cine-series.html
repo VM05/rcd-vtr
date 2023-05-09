@@ -37,8 +37,8 @@
         <div class="d-flex justify-content-between align-items-center menu-header">
           <div class="lista-menu">
             <ul class="m-0 text-white list-unstyled">
-              <li class="mx-3 active"><a href="/tendencias.html">Tendencias</a></li>
-              <li class="mx-3"><a href="/cine-series.html">Cine &amp; Series</a></li>
+              <li class="mx-3"><a href="/tendencias.html">Tendencias</a></li>
+              <li class="mx-3 active"><a href="/cine-series.html">Cine &amp; Series</a></li>
               <li class="mx-3"><a href="/imperdiblesvod.html">Imperdibles VTR+</a></li>
               <li class="mx-3"><a href="/zona-familiar.html">Zona Familiar</a></li>
             </ul>
@@ -72,21 +72,20 @@
         </div>
     </div> -->
     </nav>
-    <main>
-      <section class="container gx-0">
-        <article class="row gx-0">
-          <div class="col-md-12">
-            <div class="contenedor-texto-principal">
-              <h1>Tendencias</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, expedita.</p>
-            </div>
-          </div>
-        </article>
-      </section>
+    <main class="container gx-0">
+      <section class="row gx-0">
+        <article class="my-5 p-3 p-md-0">
+          <div class="col-md-12 margen-novedades">
+            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+              <div>
+                <h2 class="text-white my-4">Titulo Seccion</h2>
+              </div>
 
-      <section class="container gx-0">
-        <article class="row gx-0 my-5 p-3 p-md-0">
-          <div class="col-md-12">
+              <!--div class="boton-ver-mas">
+                            <a href="<?php echo get_home_url(); ?>/peliculas-y-articulos" class="text-decoration-none">Ver Más</a>
+                        </div-->
+            </div>
+
             <div class="novedades-grid">
               <div class="contenedor-imagen-texto position-relative item-1">
                 <a href="">
@@ -188,246 +187,147 @@
             </div>
           </div>
         </article>
-
-        <article class="row gx-0">
-          <div class="col-md-12">
-            <div class="contenedor-articulo-completo position-relative">
-              <a href="">
-                <div class="imagen-articulo-completo">
-                  <picture>
-                    <source
-                      srcset="/assets/tendencias/tendenciacompleta.jpeg"
-                      media="(min-width: 500px)"
-                    />
-
-                    <source
-                      srcset="/assets/tendencias/tendenciacompletam.jpeg"
-                      media="(max-width: 499px)"
-                    />
-
-                    <img
-                      src="/assets/tendencias/tendenciacompleta.jpeg"
-                      alt="banner-publicitario"
-                      class="img-fluid w-100"
-                    />
-                  </picture>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">test</p>
-                  </div>
-                  <div class="titulo-texto-novedad bottom-0 py-3 px-4 text-white w-75">
-                    <h5 class="position-relative">titulo 5</h5>
-                    <p class="mt-3">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis
-                      voluptatem explicabo reprehenderit facilis, aliquam voluptatibus temporibus
-                      error nobis vero?
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="row gx-0 my-4 p-3 p-md-0">
-          <div class="contenedor-panoramas">
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="item-panorama position-relative">
-              <a href="">
-                <div class="imagen-panorama">
-                  <img src="/assets/tendencias/panorama.jpg" alt="test" class="w-100" />
-                </div>
-                <div class="texto-panorama">
-                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, non.</h5>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">ETIQUETA</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="row gx-0 my-5 p-3 p-md-0">
-          <div class="col-md-12">
-            <div class="contenedor-articulo-completo position-relative">
-              <a href="">
-                <div class="imagen-articulo-completo">
-                  <picture>
-                    <source
-                      srcset="/assets/tendencias/tendenciafinal.jpg"
-                      media="(min-width: 500px)"
-                    />
-
-                    <source
-                      srcset="/assets/tendencias/tendenciafinalm.jpg"
-                      media="(max-width: 499px)"
-                    />
-
-                    <img
-                      src="/assets/tendencias/tendenciafinal.jpg"
-                      alt="banner-publicitario"
-                      class="img-fluid w-100"
-                    />
-                  </picture>
-                </div>
-
-                <div
-                  class="position-absolute top-0 left-0 banner-overlay d-flex flex-column justify-content-between"
-                >
-                  <div class="etiqueta top-0">
-                    <p class="mb-0">test</p>
-                  </div>
-                  <div class="titulo-texto-novedad bottom-0 py-3 px-4 text-white w-75">
-                    <h5 class="position-relative">Titulo</h5>
-                    <p class="mt-3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora a nam
-                      distinctio ipsam praesentium qui numquam maiores tenetur earum et?
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- <article class="row gx-0 p-3 p-md-0 mb-5">
-          <div class="carrusel-novedades owl-carousel owl-theme px-5">
-            <?php for ($i=12; $i < count($articulos) ; $i++) { ?>
-            <div class="contenedor-imagen-texto position-relative">
-              <a href="<?php echo the_permalink($articulos[$i]->ID);?>">
-                <div class="imagen-novedad">
-                  <?php  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($articulos[$i]->ID),
-                  'imagebox312x300' ); $url = $thumb['0']; ?>
-                  <img src="<?php echo $url; ?>" alt="" class="w-100" />
-                </div>
-
-                <div
-                  class="texto-novedad position-absolute d-flex justify-content-between flex-column top-0"
-                >
-                  <div class="etiqueta">
-                    <p>
-                      <?php echo wp_get_object_terms($articulos[$i]->ID,'categorias_articulos')[0]->name;
-                      ?>
-                    </p>
-                  </div>
-                  <div class="titulo-texto-novedad bottom-0">
-                    <h5><?php echo get_field("titulo",$articulos[$i]->ID); ?></h5>
-                    <p>
-                      <?php echo substr(get_field("abstracto",$articulos[$i]->ID),0 ,100) . '...';
-                      ?>
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <?php } ?>
-          </div>
-        </article> -->
       </section>
+
+      <section class="row gx-0">
+        <article>
+          <div class="col-md-12 p-3 p-md-0">
+            <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+              <h2 class="text-white my-3">Titulo Seccion 2</h2>
+              <!--a href="<?php echo get_home_url(); ?>/peliculas-y-articulos" class="d-block text-decoration-none p-3 pink-vermas">Ver más</a-->
+            </div>
+            <div class="carrusel-datos-curiosos owl-carousel owl-theme px-4 px-md-5">
+              <div class="item-carrusel-datos">
+                <a href="">
+                  <div class="imagen-etiqueta-datos-curiosos position-relative">
+                    <div class="imagen-datos-curiosos">
+                      <img src="/assets/img/abc.jpg" alt="" class="w-100" />
+                    </div>
+
+                    <div class="etiqueta-dato-curioso position-absolute bottom-0">
+                      <p class="text-white px-3 py-1" style="background: rgba(255, 44, 131, 0.57)">
+                        categoria
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <div class="texto-carrusel-datos-curiosos text-center p-3">
+                  <p class="text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa tempora
+                    dolores consequatur corrupti ratione perferendis eveniet dolore maiores nemo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="row gx-0">
+        <article class="p-3 p-md-0">
+          <h2 class="text-white my-5">Titulo Seccion</h2>
+          <div class="cuenta-regresiva-container p-md-0">
+            <div class="boton-youtube-modal">
+              <div class="contenedor-boton-play">
+                <a class="boton-play_trailer" data-bs-toggle="modal" data-bs-target="#trailerModal">
+                  <div class="cuenta-regresiva-item d-flex my-5">
+                    <div class="contenedor-imagen-cuenta-regresiva position-relative">
+                      <div class="imagen-cuenta-regresiva">
+                        <img src="/assets/img/5.png" alt="" />
+                      </div>
+                      <div class="etiqueta-regresiva position-absolute top-0">
+                        <p>10 dias</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-texto-cuenta-regresiva text-white">
+                      <h2 class="mb-3">Titulo</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum at
+                        nemo ducimus deserunt nulla placeat eaque reiciendis sit autem.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="boton-youtube-modal">
+              <div class="contenedor-boton-play">
+                <a class="boton-play_trailer" data-bs-toggle="modal" data-bs-target="#trailerModal">
+                  <div class="cuenta-regresiva-item d-flex my-5">
+                    <div class="contenedor-imagen-cuenta-regresiva position-relative">
+                      <div class="imagen-cuenta-regresiva">
+                        <img src="/assets/img/5.png" alt="" />
+                      </div>
+                      <div class="etiqueta-regresiva position-absolute top-0">
+                        <p>10 dias</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-texto-cuenta-regresiva text-white">
+                      <h2 class="mb-3">Titulo</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum at
+                        nemo ducimus deserunt nulla placeat eaque reiciendis sit autem.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="boton-youtube-modal">
+              <div class="contenedor-boton-play">
+                <a class="boton-play_trailer" data-bs-toggle="modal" data-bs-target="#trailerModal">
+                  <div class="cuenta-regresiva-item d-flex my-5">
+                    <div class="contenedor-imagen-cuenta-regresiva position-relative">
+                      <div class="imagen-cuenta-regresiva">
+                        <img src="/assets/img/5.png" alt="" />
+                      </div>
+                      <div class="etiqueta-regresiva position-absolute top-0">
+                        <p>10 dias</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-texto-cuenta-regresiva text-white">
+                      <h2 class="mb-3">Titulo</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum at
+                        nemo ducimus deserunt nulla placeat eaque reiciendis sit autem.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="row gx-0 my-5 p-3 p-md-0">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <h2 class="text-white my-3">Titulo Seccion</h2>
+          <!--<a href="" class="d-block text-decoration-none p-3 pink-vermas">Ver más</a>-->
+        </div>
+        <article class="carrusel-datos-actores owl-carousel owl-theme px-md-5">
+          <div class="item-datos-actores">
+            <a href="" class="text-decoration-none">
+              <div class="imagen-actor">
+                <img src="/assets/cineyseries/actor.webp" alt="" class="w-100" />
+              </div>
+              <div class="texto-datos-actores text-center py-4 px-4">
+                <h5 class="text-uppercase">Titulo</h5>
+                <p class="text-white my-3">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, reiciendis.
+                </p>
+                <a class="leer-datos" href="">Leer más</a>
+              </div>
+            </a>
+          </div>
+          <?php endif; ?>
+
+          <?php endwhile;?>
+        </article>
+      </section>
+      <?php endif;?>
     </main>
     <footer class="position-relative">
       <div class="container-fluid">
@@ -461,7 +361,7 @@
                 <ul
                   class="list-unstyled m-0 d-flex flex-column flex-md-row justify-content-between text-center"
                 >
-                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/home.html">Home</a></li>
                   <li><a href="/somos-clack.html">Somos clack</a></li>
                   <li><a href="/tendencias.html">Tendencias</a></li>
                   <li><a href="/cine-series.html">Cine & Series</a></li>
@@ -498,9 +398,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="/js/carruseles.js"></script>
-    <script src="/js/carrusel-videos.js"></script>
-    <script src="/js/paginador.js"></script>
-    <script src="/js/iteracionesvod.js"></script>
+    <!-- <script src="/js/carrusel-videos.js"></script> -->
+    <!-- <script src="/js/paginador.js"></script>
+    <script src="/js/iteracionesvod.js"></script> -->
     <script src="/js/menu.js"></script>
   </body>
 </html>
