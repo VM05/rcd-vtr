@@ -417,7 +417,7 @@ body {
 }
 @media (max-width: 500px) {
   .contenedor-carruseles .item-banner-principal .imagen-banner img {
-    height: 650px;
+    height: 750px;
   }
 }
 .contenedor-carruseles .item-banner-principal:after {
@@ -2824,6 +2824,16 @@ h2.titulo-carrusel-recomendacion {
 
 .instagram div:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 500px) {
+  .instagram {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .instagram div {
+    margin: 0px auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
